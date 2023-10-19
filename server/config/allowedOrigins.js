@@ -4,8 +4,7 @@ const allowedOrigins = [
   "http://localhost:5000",
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://yet_to_upload",
-  "https://yet_toupload-backend.onrender.com",
+  "https://recipen-mern.netlify.app/",
 ];
 
 module.exports = allowedOrigins;

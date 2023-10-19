@@ -10,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { setUsers } from "../../features/user/userSlice";
 import {
   useGetUsersQuery,
-  useMutation,
+  useDisableUserMutation,
 } from "../../features/user/userApiSlice";
 import { Avatar as MuiAvatar } from "@mui/material";
 

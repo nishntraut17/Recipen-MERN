@@ -9,8 +9,14 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // cors middleware
-app.use(credentials);
-app.use(cors());
+// app.use(credentials);
+// app.use(cors());
+app.use(cors({
+  origin: ['https://recipen-mern.netlify.app', 'https://recipen-ka-backend.onrender.com'],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // If you need to support cookies and authentication
+}));
+
 
 app.use(express.urlencoded({ extended: false }));
 

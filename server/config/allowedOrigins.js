@@ -5,6 +5,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "https://recipen-mern.netlify.app",
+  "https://recipen-ka-backend.onrender.com",
 ];
 
 module.exports = allowedOrigins;

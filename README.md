@@ -40,10 +40,10 @@ Explore a world of flavors with Recipen! Indulge in a community-driven platform 
 ![Contact page](screenshots/image-8.png)
 
 ### Recipes Page
-![Recipe page](screenshots/Recipe_page.png)
+![Recipe page](screenshots/recipe_page.jpeg)
 
 ### Blogs Page
-![Blog page](screenshots/Blog_page.png)
+![Blog page](screenshots/Blog_page.jpeg)
 
 ### Single Recipe Page
 ![Single Recipe](screenshots/single-recipe.png)

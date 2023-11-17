@@ -1,9 +1,7 @@
 require("dotenv").config();
 require("./db/conn");
 const cors = require("cors");
-const corsOptions = require("./config/corsOptions");
 const express = require("express");
-const credentials = require("./middleware/credentials");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -11,9 +9,9 @@ const port = process.env.PORT || 5000;
 // cors middleware
 
 app.use(cors({
-  origin: ['https://recipen-mern.netlify.app', 'https://recipen-mern-backend-ibfb.onrender.com/'],
+  origin: ['https://recipen-mern.netlify.app', 'https://recipen-mern-backend-ibfb.onrender.com/', 'http://localhost:5173'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // If you need to support cookies and authentication
+  credentials: true,
 }));
 
 

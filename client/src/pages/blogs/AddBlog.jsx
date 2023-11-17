@@ -90,12 +90,7 @@ const AddBlog = () => {
                 placeholder="Enter blog title"
                 className="p-1.5 border bg-gray-100 rounded focus:outline outline-primary"
               />
-              <span
-                id="title-error"
-                className=" text-red-500 pl-2 text-sm mt-1"
-              >
-                Title should at least 5 characters long
-              </span>
+
             </div>
           </div>
           <hr />

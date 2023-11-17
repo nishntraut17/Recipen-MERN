@@ -31,7 +31,6 @@ import ROLES from "./common/roles";
 function App() {
   return (
     <Router>
-      {/* <ScrollToTop /> */}
       <ToastContainer
         autoClose={5000}
         closeOnClick

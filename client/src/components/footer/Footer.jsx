@@ -31,10 +31,10 @@ const Footer = () => {
               <Link>Home</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Blog</Link>
+              <Link to='/blog'>Blog</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Recipes</Link>
+              <Link to='recipe'>Recipes</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
               <Link>Contact</Link>

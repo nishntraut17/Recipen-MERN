@@ -10,7 +10,6 @@ import { useDispatch } from "react-redux";
 import { setUsers } from "../../features/user/userSlice";
 import {
   useGetUsersQuery,
-  useDisableUserMutation,
 } from "../../features/user/userApiSlice";
 import { Avatar as MuiAvatar } from "@mui/material";
 
@@ -21,11 +20,6 @@ const Users = () => {
     ...item,
     id: index + 1,
   }));
-  const [disableUser] = useDisableUserMutation();
-
-  const handleDisable = (_id) => {
-    disableUser(_id);
-  };
 
   useEffect(() => {
     if (!isLoading) {
@@ -83,28 +77,7 @@ const Users = () => {
             )}
             {roles?.hasOwnProperty("Admin")
               ? "Admin"
-              : roles?.hasOwnProperty("ProUser")
-                ? "Pro User"
-                : "Basic User"}
-          </div>
-        );
-      },
-    },
-    {
-      field: "isDisabled",
-      headerName: "Disabled",
-      headerAlign: "center",
-      align: "center",
-      minWidth: 250,
-      renderCell: ({ row: { isDisabled, _id } }) => {
-        return (
-          <div
-            className={`rounded shadow-md w-[40%] py-1 text-center cursor-pointer ${isDisabled ? "bg-[#fad57f]" : "bg-primaryLight"
-              } ${isDisabled ? "hover:bg-[#fad57f]" : "hover:bg-primary"
-              } text-light py-2`}
-            onClick={() => handleDisable(_id)}
-          >
-            {isDisabled ? "Disabled" : "Disable"}
+              : "Pro User"}
           </div>
         );
       },

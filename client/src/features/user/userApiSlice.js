@@ -17,18 +17,10 @@ export const userApiSlice = apiSlice.injectEndpoints({
       },
       invalidatesTags: ["users"],
     }),
-    disableUser: builder.mutation({
-      query: (userId) => ({
-        url: `/user/disable/${userId}`,
-        method: "PUT",
-      }),
-      invalidatesTags: ["users"],
-    }),
   }),
 });
 
 export const {
   useGetUsersQuery,
   useUpdateUserMutation,
-  useDisableUserMutation,
 } = userApiSlice;

@@ -43,7 +43,7 @@ const Contact = () => {
           <h4 className="font-bold">Visit us</h4>
           <p>Come say hello to our office</p>
           <p className="font-semibold text-sm">
-            Matoshree Heights, Ambegaon Bk, Pune, Maharashtra 411041
+            XYZ, Pune, Maharashtra 411041
           </p>
         </div>
         <div className="mb-5 flex flex-col gap-1">
